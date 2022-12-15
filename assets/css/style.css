@@ -36,12 +36,6 @@ nav ul {
   flex-wrap: wrap;
 }
 
-.flexcontainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-}
 
 h1 {
     font-size:xx-large;
@@ -85,16 +79,12 @@ button {
   text-align: center;
 }
 button:hover {
-  background-color: white;
+  background-color: orangered;
   color: #fff;
 }
 button:active {
   font-size: 125%;
   box-shadow: 0 0 10px #000 inset;
-}
-button:focus {
-  outline: none;
-  border-color: #8ac4ff;
 }
 article {
   margin-bottom: 5px;
@@ -103,7 +93,7 @@ article {
   background-color: blue;
 }
 
-.card {
+.layout section{
   flex: 0 0 500px;
   padding: 5px;
   margin-top: 50px;
@@ -115,12 +105,19 @@ article {
 /* adjust height of box inside checkered line here*/
 }
 
-.card header {
+.layout section header {
   padding: 5px;
   position: relative; 
   margin-top: -30px; 
   justify-content: center;
 }
+
+.layout .card1 {
+  flex: 1 0 100%;
+  }
+  .layout section {
+    flex: 1 0 auto;
+  }
 
 
 .sections {
