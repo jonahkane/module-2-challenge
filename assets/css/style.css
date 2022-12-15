@@ -82,6 +82,7 @@ button:hover {
   background-color: orangered;
   color: #fff;
 }
+a 
 button:active {
   font-size: 125%;
   box-shadow: 0 0 10px #000 inset;
@@ -123,6 +124,10 @@ article {
 
   .my-work section {
     flex: 1 0 auto;
+  }
+
+  .card:hover {
+
   }
 
 
