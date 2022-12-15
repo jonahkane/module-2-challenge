@@ -1,16 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css/">
-    <link rel="stylesheet" href="./assets/reset.css">
-
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Jonah Kane's Portfolio</title>
 </head>
+
 <body>
-    <header><H1>Jonah Kane</H1></header>
-    <footer><h2>Footer here</h2></footer>
+
+    <header id="header" class="Header">
+        <H1>Jonah Kane's Portfolio</H1>
+        <nav>
+            <ul>
+                <li>
+                    <button><a href="#About-me">About Me</a></button>
+                </li>
+                <li>
+                    <button><a href="#My-Work">My Work</a></button>
+                </li>
+                <li>
+                    <button><a href="#Contact-Me">Contact Me</a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--        <aside class="sections">
+            <section class="about-me">
+                <h3>About Me</h3>
+            </section>
+            <section class="my-work">
+                <h3>My Work</h3>
+            </section>
+            <section class="contact-me">
+                <h3>Contact Me</h3>
+            </section>
+        </aside>
+
+    -->
+        <div class="flexcontainer1">
+            <article id="About-Me" class="About-Me">
+                <img src="./assets/images/selfie.png" class="float-left" alt="selfie photo" />
+                <!--
+                    <h2>About Me</h2>
+                -->
+
+                <p>My name is Jonah Kane. I am a rookie web developer with very limited experience but a whole lot of
+                    drive and desire to learn.
+                    I decided to get into this crazy world becuase I lost my job. I spent the last 5 years of my
+                    professional career working as a Dispatch Manager for a local ready-mix concrete
+                    supplier but they eliminated my position. Finding a new job has been difficult so I decided to go
+                    back to school to learn a new valuable skill that is in high demand.
+
+                </p>
+            </article>
+        </div>
+        <div class="hidden">
+            <article id="My-Work" class="My-Work">
+                <!--
+
+                <h2>My Work</h2>
+                     -->
+        </div>
+        <div class="layout">
+            <section class="card">
+                <header>
+                    <h2>My First Project Ever</h2>
+                </header>
+                <article>
+                    <h4>I created this page before I had any formal training.</h4>
+                    <a href="https://jonahkane.github.io/">
+                        <img src="./assets/images/first.png" alt="screenshot of first ever webpage"></a>
+                    <p id="box">
+                        https://jonahkane.github.io/
+                    </p>
+
+                </article>
+            </section>
+            <section class="card">
+                <header>
+                    <h2>Prework Study Guide</h2>
+                </header>
+                <article>
+                    <h4>This was the first project in my UofM Bootcamp</h4>
+                    <a href="https://jonahkane.github.io/prework-study-guide/">
+                        <img src="./assets/images/prework.png" alt="screenshot of prework study guide webpage"></a>
+                    <p id="box">
+                        https://jonahkane.github.io/prework-study-guide/
+                    </p>
+                </article>
+            </section>
+            <section class="card">
+                <header>
+                    <h2>Horiseon Project</h2>
+                </header>
+                <article>
+                    <h4> First true homework assignment from bootcamp</h4>
+                    <a href="https://jonahkane.github.io/02-challenge/">
+                        <img src="./assets/images/horiseon.png" alt="screenshot of first homework assignment"></a>
+                    <p id="box">
+                        https://jonahkane.github.io/02-challenge/
+                    </p>
+                </article>
+            </section>
+            <section class="card">
+                <header>
+                    <h2>Future Project #1</h2>
+                </header>
+                <article>
+                    <h4>Coming Soon!</h4>
+                    <a
+                        href="https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=">
+                        <img src="./assets/images/coming soon.png" alt="coming soon"> </a>
+                    <p id="box">
+                        future project link coming soon!
+
+
+
+                </article>
+
+            </section>
+            <section class="card">
+                <header>
+                    <h2>Future Project #2</h2>
+                </header>
+                <article>
+                    <h4>Coming Soon!</h4>
+                    <a
+                        href="https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=">
+                        <img src="./assets/images/coming soon.png" alt="coming soon"> </a>
+                    <p id="box">
+                        future project link coming soon!
+
+                </article>
+
+            </section>
+            <section class="card">
+                <header>
+                    <h2>Future Project #3</h2>
+                </header>
+                <article>
+                    <h4>Coming Soon!</h4>
+                    <a
+                        href="https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=">
+                        <img src="./assets/images/coming soon.png" alt="coming soon"> </a>
+                    <p id="box">
+                        future project link coming soon!
+                </article>
+            </section>
+        </div>
+        <article id="Contact-Me" class="Contact-Me">
+            <!--    
+                <h2>Contact Me</h2>
+            -->
+            <ul>
+                <li>Phone: 952-452-3285</li>
+                <li>Email: JonahTKane@gmail.com</li>
+                <li>Github: GitHub.com/JonahKane</li>
+                <li>LinkedIn: JonahKane.com</li>
+            </ul>
+        </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Footer here</h3>
+        <button> <a href="#header">Return to top of page</a></button>
+    </footer>
+
 </body>
+
 </html>
