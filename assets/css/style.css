@@ -1,157 +1,162 @@
 * {
-    padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, sans-serif;
-
-}
-body {
-  background-color: lightblue;
-  font-size: 16px;
-  color: white;
-  
-}
-.my-work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  
-  
-}
-header, footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   color: aqua;
 }
-nav a {
-  color: darkblue;
-  font-weight: bold;
+
+.navbar, .footer {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1%;
+color: aqua;
+background-color: brown;
+border: solid 5px lime;
+}
+.footer {    
+  display: block;
+  padding: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.footer p {
+  width: 100%;
+
+}
+section {
+  display: flex;
+  background-color: brown;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  padding: 5px;
+  border: solid 5px lime;
+  
+}
+
+body {
+  background-color: lemonchiffon;
+}
+
+p {
+  width: 70%;    
 }
 nav ul {
   display: flex;
   flex-wrap: wrap;
+  
+}
+a {
+  color: darkblue;
 }
 
 
-h1 {
-    font-size:xx-large;
+.CM-container .strongside, .AM-container .strongside {
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
 }
+.CM-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid white;
+}
+.CM-container ul li { 
+justify-content: space-between;
+margin: 10px;
 
-h2 {
-  font-size: x-large;
-  color: aqua;
-  }
-
-.float-left {
-  float: left;
-  margin-right: 25px;
 }
 
 img {
   max-height: 200px;
+  margin: 5px;
   border: 5px solid black;
   border-radius: 10px;
+}
+
+.leftside {
+  border-right: solid 1px white;
+  margin: 0px;
   padding: 0;
-  margin: 10px;
+  text-align: left;
+  width: 160px;
 }
 
-/* about me section */
-div article{
-  height: 275px;
-  margin-bottom: 10px;
+.strongside {
+  display: flex;
+  flex-flow: row wrap;
 }
-.hidden {
-  display: none;
+.strongside .cards {
+  flex: 1 0 auto;
+}
+#card1 {
+  
+  flex: 1 0 auto;
+}
+h1, h2 {
+  margin: 50px;
+}
+h2 {
+  text-align: center;
+
 }
 
+p{
+  margin: 15px;
+}
 
+.MW-container {
+  text-align: center;
+}
+
+.mywork .cards {
+  height: 300px
+}
+
+.cards h3, .card1 h3  {
+  padding: 7px;
+  position: relative;
+  margin-top: -20px;
+  border: 2.5px solid white;
+  border-radius: 10px;
+  background-color: brown;
+  margin-left: 75px;
+  margin-right: 75px
+}
+  .cards, .card1 {
+  flex: 0 0 auto;
+  padding: 5px;
+  margin: 20px;
+  border: 1px dashed black;
+  background-color: gray;
+  justify-content: center;
+  justify-items: center;
+}
 button {
-  width: 125px;
-  margin: 0 .5%;
+  
+  width: 200px;
+  margin: 10px;
   font-size: 100%;
   color: #13293d;
-  background-color: #fff;
+  background-color: pink;
   border: 3px solid #13293d;
   text-align: center;
 }
+
 button:hover {
   background-color: orangered;
   color: #fff;
 }
-a 
-button:active {
-  font-size: 125%;
-  box-shadow: 0 0 10px #000 inset;
-}
-article {
-  margin-bottom: 5px;
-  padding: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: blue;
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-.content {
-  width: 80%;
-  display: inline-block;
-  justify-content: end;
+.fixed button {
+  height: 40px
 }
-.my-work section{
-  flex: 0 0 500px;
-  padding: 5px;
-  margin-top: 50px;
-  border: 1px black;
-  text-align: center;
-  border-style: dashed;
-  justify-content: space-around;
-  
-/* adjust height of box inside checkered line here*/
-}
-
-.my-work section header {
-  padding: 5px;
-  position: relative; 
-  margin-top: -30px; 
-  justify-content: center;
-}
-
-.my-work .card1 {
-  flex: 1 0 100%;
-  }
-
-  .my-work section {
-    flex: 1 0 auto;
-  }
-
-  .card:hover {
-
-  }
-
-
-.sections {
-  float: left;
-  width: 10%;
-  height: 1200px;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-.sections h3 {
-  margin-bottom: 10px;
-  text-align: right;
-}
-.footer {
-  display: block;
-    text-align: center;
-}
-
-
+/* 
 @media screen and (max-width: 992px) {
   .card {
     width: 33%
@@ -160,12 +165,12 @@ article {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 50%
+    width: 25%
   }
 }
 
 @media screen and (max-width: 576px) {
     .card {
-        width: 100%
+        width: 10%
     }
-}
+} */
