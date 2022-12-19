@@ -1,0 +1,247 @@
+/* universal selector  */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: aqua;
+}
+
+/* setting header and footer styling to be the same for continuity purposes */
+.navbar, .footer {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1%;
+color: aqua;
+background-color: brown;
+border: solid 5px lime;
+}
+
+.footer {    
+  display: block;
+  padding: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  width: 100%;
+
+}
+/* setting main body styling across page */
+section {
+  display: flex;
+  background-color: brown;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  padding: 5px;
+  border: solid 5px lime;
+  
+}
+
+/* giving background of page soft color */
+body {
+  background-color: lemonchiffon;
+  width: 100%;
+}
+
+p {
+  width: 70%;    
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;    
+}
+
+a {
+  color: darkblue;
+}
+
+/* setting flex grow property to have "cards" of my work fill from left to right side of the container */
+.CM-container .strongside, .AM-container .strongside {
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+/* stacking contact information into a column */
+.CM-container ul {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+/* giving space between line items of contact me field */
+.CM-container ul li { 
+justify-content: space-between;
+margin: 10px;
+}
+
+/* setting uniform look for how images are presented on the page */
+img {
+  max-height: 200px;
+  margin: 5px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+/* setting uniform look for "header" that is displayed on the left side of the page */
+.leftside {
+  border-right: solid 1px white;
+  margin: 0px;
+  padding: 0;
+  text-align: left;
+  width: 160px;
+}
+
+/* used "strongside" as a nod to the Disney Movie Remember The Titans, 
+but more importantly, setting flex box container properties so the page is responsive and adjusts layout when changed */
+.strongside {
+  display: flex;
+  flex-flow: row wrap;
+}
+.strongside .cards {
+  flex: 1 0 auto;
+}
+
+#card1 {  
+  flex: 1 0 auto;
+}
+
+/* setting margin to 50px to create space for visual appeal */
+h1, h2 {
+  margin: 50px;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p{
+  margin: 15px;
+}
+
+.MW-container {
+  text-align: center;
+}
+
+.mywork .cards {
+  height: 300px
+}
+
+/* adding header to each card of my work section, centered, and 'floating' a bit above for unique layout */
+.cards h3, .card1 h3  {
+  padding: 7px;
+  position: relative;
+  margin-top: -20px;
+  border: 2.5px solid white;
+  border-radius: 10px;
+  background-color: brown;
+  margin-left: 75px;
+  margin-right: 75px
+}
+/* adding some decoration to the cards of mywork section */
+  .cards, .card1 {
+  flex: 0 0 auto;
+  padding: 5px;
+  margin: 20px;
+  border: 1px dashed black;
+  background-color: gray;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* adding styling to buttons */
+button {    
+  width: 200px;
+  margin: 10px;
+  font-size: 100%;
+  color: #13293d;
+  background-color: pink;
+  border: 3px solid #13293d;
+  text-align: center;
+}
+
+/* when cursor is over the button, it will highligh to stand out that it is a link/button */
+button:hover {
+  background-color: orangered;
+  color: #fff;
+}
+
+/* created a fixed position button for the user to click
+in order to return to the top of the page without having to scroll */
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* changed the size of this button when compared to the others - wanted it to be tucked
+away in the bottom right corner so as to not interrupt any data that is presented on the page.
+when the screen size shrinks to mobile size, the original sized button overlapped some data in the footer.
+this corrects that issue */
+.fixed button {
+  height: 40px;
+  width: auto;
+}
+
+/* when the page is fullsized, there were no issues.  but when shrinking the size of the page,
+i did not like how the nav buttons started to wrap.  so i changed it to a column layout when the page
+reaches the first breakpoint */
+@media screen and (max-width: 1140px) {
+  header nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+/* this media query is used to help display all data in a column format that is more easily read
+on a smaller screen size.  it puts the "header" of each section at the top, instead of floating to the left
+so as to avoid having any horizontal scrolling */
+@media screen and (max-width: 992px) {
+.navbar, .AM-container, .MW-container, .CM-container {
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  text-align: center;
+}
+header nav ul {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftside {
+  order: 0;
+  justify-content: center;
+  margin: auto;
+  border-right: 0;
+  border-bottom: solid 1px white;
+}
+.strongside {
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+}
+h1, h2 {
+  margin: 10px;
+  padding: 10px;
+}
+.cards {
+  width: 90%;
+}
+}
+
+/* changing the size of all images presented on the page so when screen size shrinks, the 
+images do not spill out over the container - this MQ is intended for tablet users */
+@media screen and (max-width: 768px) {
+  img {
+      max-height: 175px;
+  }
+}
+
+/* similar to previous MQ but this is intended for mobile phone users */
+@media screen and (max-width: 576px) {
+  img {
+      max-height: 150px
+  };  
+}
