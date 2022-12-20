@@ -32,7 +32,7 @@ border: solid 5px lime;
 section {
   display: flex;
   background-color: brown;
-  width: 80%;
+  width: 100%;
   margin: 1rem auto 0 auto;
   padding: 5px;
   border: solid 5px lime;
@@ -46,7 +46,7 @@ body {
 }
 
 p {
-  width: 70%;    
+  width: 100%;    
 }
 
 nav ul {
@@ -82,7 +82,9 @@ img {
   margin: 5px;
   border: 5px solid black;
   border-radius: 10px;
+  justify-items: center;
 }
+
 
 /* setting uniform look for "header" that is displayed on the left side of the page */
 .leftside {
@@ -114,7 +116,6 @@ h1, h2 {
 
 h2 {
   text-align: center;
-
 }
 
 p{
@@ -126,7 +127,8 @@ p{
 }
 
 .mywork .cards {
-  height: 300px
+  height: 300px;
+  width: 300px;
 }
 
 /* adding header to each card of my work section, centered, and 'floating' a bit above for unique layout */
@@ -142,7 +144,7 @@ p{
 }
 /* adding some decoration to the cards of mywork section */
   .cards, .card1 {
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   padding: 5px;
   margin: 20px;
   border: 1px dashed black;
